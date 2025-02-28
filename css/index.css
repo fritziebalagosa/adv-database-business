@@ -114,6 +114,11 @@
     white-space: nowrap;
 }
 
+.menu-item:hover {
+    color: #7AB2B2;
+    text-decoration: underline;
+}
+
 
 ul {
     list-style: none;
@@ -313,34 +318,49 @@ ul {
     background-color: #7AB2B2;
     color: #EEF7FF;
     padding: 20px 50px;
+    justify-content: space-evenly;
 }
 
-.infos {
-    color: #EEF7FF;
-    padding: 20px 50px;
-}
-
-.infos h3 {
+.footer-container h3 {
     margin-bottom: 20px;
     color: #4D879C;
 }
 
-.infos ul li a {
+.footer-container ul li a {
     color: #EEF7FF;
     text-decoration: none;
 }
 
-.services {
-    color: #EEF7FF;
-    padding: 20px 50px;
-}
-
-.services h3 {
+.contacts-icon {
+    display: flex;
+    align-items: center; /* Centers SVG and text vertically */
+    gap: 8px; /* Adds space between the icon and text */
     margin-bottom: 20px;
-    color: #4D879C;
+    vertical-align: middle;
 }
 
-.services ul li a {
-    color: #EEF7FF;
-    text-decoration: none;
+svg {
+    width: 20px;
+    height: 20px;
+    transform: scale(1.4);
+    fill: #EEF7FF;
+    stroke: none !important; 
+    stroke-width: 0 !important;
 }
+  
+  span {
+    font-size: 16px;
+    color: #EEF7FF;
+}
+
+.bottom-footer {
+    background-color: #7AB2B2;
+    color: #EEF7FF;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+  
