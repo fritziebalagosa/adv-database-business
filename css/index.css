@@ -297,18 +297,22 @@ ul {
 }
 
 .order-button {
-    background-color: #4D879C;
+    background-color: #5a8a96;
     color: white;
     border: none;
-    padding: 10px 30px;
     border-radius: 25px;
+    padding: 6px 0; /* Reduced vertical padding to make button thinner */
+    margin: 8px ;
+    font-size: 14px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 240px; 
+    letter-spacing: 0.5px; /* Added slight letter spacing for better readability */
 }
 
 .order-button:hover {
     background-color: #7AB2B2;
+    transform: translateY(-2px);
 }
 
 /*FOOTER*/
