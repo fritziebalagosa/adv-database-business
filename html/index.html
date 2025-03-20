@@ -47,8 +47,8 @@
                         <li class="dropdown">
                             <a href="#" class="menu-item">Categories <i class="dropdown-arrow"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Birthday Cakes</a></li>
-                                <li><a href="#">Wedding Cakes</a></li>
+                                <li><a href="products.html#bday">Birthday Cakes</a></li>
+                                <li><a href="products.html#wedding">Wedding Cakes</a></li>
                                 <li><a href="#">Graduation Cakes</a></li>
                                 <li><a href="#">Christening Cakes</a></li>
                                 <li><a href="#">Cupcakes and Minis</a></li>
@@ -77,7 +77,7 @@
                         </li>
                     </ul>
                     
-                    <li><a href="#" class="menu-item">Best Sellers</a></li>
+                    <li><a href="#best-cakes" class="menu-item">Best Sellers</a></li>
                     <li><a href="#" class="menu-item">About Us</a></li>
                 </ul>
             </div>
@@ -92,7 +92,7 @@
         <div class="text-container"> 
             <h1>Mooncakes</h1>
             <p class="subtitle">Indulge in Artful Sweetness.</p>
-            <button class="shop-now">Shop Now</button>
+            <button class="shop-now" onclick="window.location.href='products.html'">Shop Now</button>
         </div>
         </div>
     </div>
@@ -100,7 +100,7 @@
     <!--BEST SELLERS-->
 
     <section>
-    <div class="best-cakes">
+    <div class="best-cakes" id="best-cakes">
             <div class="best">
                 <h2> BEST SELLERS </h3>
             </div>
@@ -156,30 +156,49 @@
          </div>
    </section>
     </div>
+
         <!--FOOTER-->
-    <footer>
+        <footer class="footer">
+            <div class="footer-content">
+              <div class="footer-column">
+                <h3 class="footer-heading">INFORMATION</h3>
+                <ul class="footer-links">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">FAQs</a></li>
+                </ul>
+              </div>
+              
+              <div class="footer-column">
+                <h3 class="footer-heading">CUSTOMER SERVICE</h3>
+                <ul class="footer-links">
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+              </div>
+              
+              <div class="footer-column">
+                <h3 class="footer-heading">CONTACT US</h3>
+                <ul class="footer-links">
+                  <li>
+                    <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/>
+                    </svg>
+                    <a href="mailto:info@example.com">info@example.com</a>
+                  </li>
+                  <li>
+                    <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20 15.5C18.8 15.5 17.5 15.3 16.4 14.9C16.1 14.8 15.7 14.9 15.5 15.1L13.2 17.4C10.4 15.9 8 13.6 6.6 10.8L8.9 8.5C9.1 8.3 9.2 7.9 9.1 7.6C8.7 6.5 8.5 5.2 8.5 4C8.5 3.5 8 3 7.5 3H4C3.5 3 3 3.5 3 4C3 13.4 10.6 21 20 21C20.5 21 21 20.5 21 20V16.5C21 16 20.5 15.5 20 15.5ZM19 12H21C21 7 17 3 12 3V5C15.9 5 19 8.1 19 12ZM15 12H17C17 9.2 14.8 7 12 7V9C13.7 9 15 10.3 15 12Z"/>
+                    </svg>
+                    <a href="tel:+1234567890">+1 (234) 567-890</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-    <section class="footer-container">
-        <div class="infos">
-            <h3>INFORMATION </h3>
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">FAQs</a></li>
-            </ul>
-        </div>
-
-        <div class="services">
-            <h3> CUSTOMER SERVICE </h3>
-            <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-            </ul>
-
-        </div>
-    </section>
-
-    </footer>
+            <div class="footer-copyright">
+              &copy; 2025 Company Name. All Rights Reserved.
+            </div>
+          </footer>
     </main>
-
 </body>
 </html>
