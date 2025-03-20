@@ -83,7 +83,7 @@
     position: absolute;
     top: -8px;
     right: -8px;
-    background-color: #4D879C;
+    background-color: #ff4444;
     color: white;
     font-size: 12px;
     padding: 2px 6px;
@@ -112,11 +112,6 @@
     gap: 5px;
     cursor: pointer;
     white-space: nowrap;
-}
-
-.menu-item:hover {
-    color: #7AB2B2;
-    text-decoration: underline;
 }
 
 
@@ -318,49 +313,34 @@ ul {
     background-color: #7AB2B2;
     color: #EEF7FF;
     padding: 20px 50px;
-    justify-content: space-evenly;
 }
 
-.footer-container h3 {
+.infos {
+    color: #EEF7FF;
+    padding: 20px 50px;
+}
+
+.infos h3 {
     margin-bottom: 20px;
     color: #4D879C;
 }
 
-.footer-container ul li a {
+.infos ul li a {
     color: #EEF7FF;
     text-decoration: none;
 }
 
-.contacts-icon {
-    display: flex;
-    align-items: center; /* Centers SVG and text vertically */
-    gap: 8px; /* Adds space between the icon and text */
+.services {
+    color: #EEF7FF;
+    padding: 20px 50px;
+}
+
+.services h3 {
     margin-bottom: 20px;
-    vertical-align: middle;
+    color: #4D879C;
 }
 
-svg {
-    width: 20px;
-    height: 20px;
-    transform: scale(1.4);
-    fill: #EEF7FF;
-    stroke: none !important; 
-    stroke-width: 0 !important;
-}
-  
-  span {
-    font-size: 16px;
+.services ul li a {
     color: #EEF7FF;
+    text-decoration: none;
 }
-
-.bottom-footer {
-    background-color: #7AB2B2;
-    color: #EEF7FF;
-}
-
-.copyright {
-    text-align: center;
-    padding-top: 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
