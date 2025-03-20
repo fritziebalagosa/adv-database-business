@@ -1,0 +1,127 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, sans-serif;;
+}
+
+
+.title {
+  margin-bottom: 1rem;
+  color: #4D879C;
+  padding-top: 1rem;
+  margin-left: 20px;
+  margin-top: 1.5rem;
+  text-align: left;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.scroll-wrapper {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  padding: 0.5rem 0 1.5rem 0;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-content {
+  display: inline-flex;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.card {
+  display: inline-block;
+  width: 280px;
+  background-color: #CDE8E5; /* Light mint */
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+.card-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  background-color: #7AB2B2; /* Teal background for placeholder */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.25rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #4D879C; /* Blue-gray */
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+.order-button {
+  background-color: #7AB2B2; /* Teal */
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+  text-transform: uppercase;
+}
+
+.order-button:hover {
+  background-color: #4D879C;
+  transform: translateY(-2px);
+}
+
+/* Navigation Arrows */
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #7AB2B2;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.nav-arrow:hover {
+  background-color: #4D879C;
+}
+
+.nav-arrow:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.nav-arrow.prev {
+  left: 10px;
+}
+
+.nav-arrow.next {
+  right: 10px;
+}
