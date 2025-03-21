@@ -41,3 +41,13 @@ document.addEventListener('DOMContentLoaded', function() {
         updateArrowVisibility();
     });
 });
+
+
+function openForm(cakeName, description) {
+    document.getElementById('modalTitle').innerText = cakeName;
+    document.getElementById('modalDescription').innerText = description;
+    document.getElementById('orderModal').style.display = 'block';
+}
+function closeForm() {
+    document.getElementById('orderModal').style.display = 'none';
+}

@@ -236,6 +236,7 @@ ul {
 
 .shop-now:hover {
     background-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
 }
 
 /*BEST SELLERS*/
@@ -275,11 +276,21 @@ ul {
 }
 
 .product-card {
-    background-color: rgba(205, 232, 229, 0.5); 
+    width: 350px;
+    background-color: #e6f3f1;
+    border-radius: 12px;
     padding: 20px;
-    border-radius: 10px;
-    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     text-align: center;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .product-image {
@@ -287,33 +298,68 @@ ul {
     height: 300px;
     object-fit: cover;
     border-radius: 8px;
-    margin-bottom: 15px;
+    transition: opacity 0.3s ease;
 }
+
+.image-container:hover .product-image {
+    opacity: 0.2;
+    background-color: #4D879C;
+}
+
+.hover-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4D879C;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* Prevents the button from interfering with hover */
+}
+
+.image-container:hover .hover-button {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.hover-button:hover {
+    transform: translate(-50%, calc(-50% - 5px)); 
+}
+
 
 .product-name {
     color: #4D879C;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 15px;
 }
 
 .order-button {
-    background-color: #5a8a96;
+    background-color: #4D879C;
     color: white;
     border: none;
-    border-radius: 25px;
-    padding: 6px 0; /* Reduced vertical padding to make button thinner */
-    margin: 8px ;
-    font-size: 14px;
+    border-radius: 30px;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-    width: 240px; 
-    letter-spacing: 0.5px; /* Added slight letter spacing for better readability */
+    margin-bottom: 10px;
 }
 
 .order-button:hover {
-    background-color: #7AB2B2;
+    background-color: #3a6a7d;
     transform: translateY(-2px);
 }
+
+/*VIEW DETAILS*/
+
+/*MODAL*/
+
 
 /*FOOTER*/
 
