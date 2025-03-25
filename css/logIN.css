@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('../img/Home.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #7AB2B2;
+    opacity: 0.9;
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+    color: #EEF7FF;
+    font-size: 20px;
+    width: 30%;
+    height: 40%;
+}
+
+.form {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 15px;
+    border: 2px solid #CDE8E5;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    transition: background-color 0.3s ease;
+    color: #EEF7FF;
+    width: 60%;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #4a809f;
+    transform: translateY(-2px);
+}
+
+p {
+    margin-top: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #d9d9d9;
+}
+

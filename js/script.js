@@ -42,12 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+modal.style.display = "none";
 
-function openForm(cakeName, description) {
-    document.getElementById('modalTitle').innerText = cakeName;
-    document.getElementById('modalDescription').innerText = description;
-    document.getElementById('orderModal').style.display = 'block';
-}
-function closeForm() {
-    document.getElementById('orderModal').style.display = 'none';
-}
+
+  
+
+

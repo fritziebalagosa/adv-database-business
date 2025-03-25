@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Checkout</title>
+    <link rel="stylesheet" href="../css/order_form.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Order Checkout</h1>
+            <button class="return-btn" onclick="goBack()">← Return Home</button>
+        </header>
+        
+        <form id="checkout-form">
+            <div class="checkout-grid">
+                <div class="product-section">
+                    <div class="product-image">
+                        <img src="../img/c1.jpg" alt="Matcha Cake">
+                    </div>
+                    
+                    <h2 class="product-title">Matcha Cake</h2>
+                    <p class="product-subtitle">Premium Japanese matcha cake with delicate floral decoration</p><br>
+                    
+                    <div class="product-details">
+                        <ul>
+                            <li>• Made with authentic Japanese matcha powder</li>
+                            <li>• Decorated with handcrafted sugar flowers</li>
+                            <li>• Light and fluffy texture</li>
+                            <li>• Perfect for birthdays and special occasions</li>
+                            <li>• Can be customized with your message</li>
+                        </ul>
+                    </div><br>
+                    
+                    <div class="action-buttons">
+                        <button type="button" class="action-btn cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="options-section">
+                    <div class="option-group">
+                        <h3 class="option-title">Size</h3>
+                        <div class="option-items">
+                            <div class="option-item selected">
+                                <div class="option-item-check">✓</div>
+                                <div class="option-item-title">6 inch</div>
+                                <div class="option-item-subtitle">Serves 6-8</div>
+                                <div class="option-item-price">₱750</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-item-title">8 inch</div>
+                                <div class="option-item-subtitle">Serves 10-12</div>
+                                <div class="option-item-price">₱950</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="option-group">
+                        <h3 class="option-title">Decoration</h3>
+                        <div class="option-items">
+                            <div class="option-item selected">
+                                <div class="option-item-check">✓</div>
+                                <div class="option-item-title">Floral (as shown)</div>
+                                <div class="option-item-subtitle">White flowers</div>
+                                <div class="option-item-price">Included</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-item-title">Minimalist</div>
+                                <div class="option-item-subtitle">Clean design.No toppings, just message.</div>
+                                <div class="option-item-price">Included</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-item-title">Toppings</div>
+                                <div class="option-item-subtitle">Additional Topping</div>
+                                <div class="option-item-price">+₱100</div>
+                            </div>
+                            <div class="option-item">
+                                <div class="option-item-title">Custom Design</div>
+                                <div class="option-item-subtitle">Personalized</div>
+                                <div class="option-item-price">+₱200</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="option-group">
+                        <h3 class="option-title">Message on Cake</h3>
+                        <div class="form-group">
+                            <input type="text" id="message" name="message" placeholder="e.g., Happy Birthday!" value="Happy Birthday!">
+                        </div>
+                    </div>
+                    
+                    <div class="option-group">
+                        <h3 class="option-title">Quantity</h3>
+                        <div class="form-group">
+                            <input type="number" id="quantity" name="quantity" min="1" value="1" onchange="updateTotal()">
+                        </div>
+                    </div>
+                    
+                    <div class="option-group">
+                        <h3 class="option-title">Delivery Method</h3>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="delivery-method" value="pickup" checked> Pick Up
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="delivery-method" value="delivery"> Delivery (+₱150)
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="option-group">
+                        <h3 class="option-title">Payment Method</h3>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="payment-method" value="gcash" checked> GCash
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="payment-method" value="paymaya"> PayMaya
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="payment-method" value="cod"> Cash on Delivery
+                            </label>
+                        </div>
+                        <div class="payment-icons">
+                            <div class="payment-icon">GCash</div>
+                            <div class="payment-icon">Maya</div>
+                            <div class="payment-icon">Cash</div>
+                        </div>
+                    </div>
+                    
+                    <div class="option-group">
+                        <h3 class="option-title">Pick Up/Delivery Date & Time</h3>
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+                    
+                    <div class="option-group">
+                        <h3 class="option-title">Special Instructions</h3>
+                        <div class="form-group">
+                            <textarea id="instructions" name="instructions" rows="3" placeholder="For personalization and special requests."></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="option-group">
+                        <h3 class="option-title">Customer Details</h3>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Delivery Address (For Deliveries)</label>
+                            <textarea id="address" name="address" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="checkout-footer">
+                <div class="total-price">₱750</div>
+                <button type="submit" class="checkout-btn">Continue to Checkout</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="../js/order_form.js" defer></script>
+</body>
+</html>

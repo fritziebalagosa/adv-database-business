@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mooncakes</title>
     <link rel="stylesheet" href="..\css\index.css">
-
+    <link rel="stylesheet" href="..\css\modal.css">
 </head>
 <!--NAVIGATION BAR-->
     <header>
@@ -86,8 +86,9 @@
 
 <body>
 <script src="../js/script.js" defer></script>
-    <main>
-        <!--LANDING PAGE-->
+
+<main>
+<!--LANDING PAGE-->
 
     <div class="home">
         <div class="text-container"> 
@@ -100,107 +101,108 @@
 
     <!--BEST SELLERS-->
 
-    <section>
-    <div class="best-cakes" id="best-cakes">
-            <div class="best">
-                <h2> BEST SELLERS </h3>
-            </div>
-
-        <div class="cakes">
-            <div class="product-card">
-                <div class="image-container">
-                    <img src="../img/c1.jpg" alt="Matcha Cake" class="product-image">
-                    <button class="hover-button">Quick View</button>
+    <section class="best">
+        <div class="best-cakes" id="best-cakes">
+                <div class="best">
+                    <h2> BEST SELLERS </h3>
                 </div>
-                <h2 class="product-name">Matcha Cake</h2>
-                <button class="order-button">Order Now</button>
-                <button class="order-button">Add to cart</button>
-            </div>
 
-           <div class="product-card">
-                <div class="image-container">
-                    <img src="../img/c2.jpg" alt="Matcha Cake" class="product-image">
-                    <button class="hover-button">Quick View</button>
+            <div class="cakes">
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="../img/c1.jpg" alt="Matcha Cake" class="product-image">
+                        <button class="hover-button" id="quickViewBtn">Quick View</button>
+                    </div>
+                    <h2 class="product-name">Matcha Cake</h2>
+                    <button class="order-button"><a href="order_form.html">Order Now</a></button>
+                    <button class="order-button">Add to cart</button>
                 </div>
-                <h2 class="product-name">Blueberry Butterfly Cake</h2>
-                <button class="order-button">Order Now</button>
-                <button class="order-button">Add to cart</button>
-            </div>
 
             <div class="product-card">
-                <div class="image-container">
-                    <img src="../img/c3.jpg" alt="Matcha Cake" class="product-image">
-                    <button class="hover-button">Quick View</button>
+                    <div class="image-container">
+                        <img src="../img/c2.jpg" alt="Matcha Cake" class="product-image">
+                        <button class="hover-button" id="quickViewBtn">Quick View</button>
+                    </div>
+                    <h2 class="product-name">Blueberry Butterfly Cake</h2>
+                    <button class="order-button">Order Now</button>
+                    <button class="order-button">Add to cart</button>
                 </div>
-                <h2 class="product-name">Strawberry Cake</h2>
-                <button class="order-button">Order Now</button>
-                <button class="order-button">Add to cart</button>
-            </div>
 
-            <div class="product-card">
-                <div class="image-container">
-                    <img src="../img/c4.jpg" alt="Matcha Cake" class="product-image">
-                    <button class="hover-button">Quick View</button>
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="../img/c3.jpg" alt="Matcha Cake" class="product-image">
+                        <button class="hover-button" id="quickViewBtn">Quick View</button>
+                    </div>
+                    <h2 class="product-name">Strawberry Cake</h2>
+                    <button class="order-button">Order Now</button>
+                    <button class="order-button">Add to cart</button>
                 </div>
-                <h2 class="product-name">Chocolate Heart Cake</h2>
-                <button class="order-button">Order Now</button>
-                <button class="order-button">Add to cart</button>
-            </div>
 
-            <div class="product-card">
-                <div class="image-container">
-                    <img src="../img/c5.jpg" alt="Matcha Cake" class="product-image">
-                    <button class="hover-button">Quick View</button>
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="../img/c4.jpg" alt="Matcha Cake" class="product-image">
+                        <button class="hover-button" id="quickViewBtn">Quick View</button>
+                    </div>
+                    <h2 class="product-name">Chocolate Heart Cake</h2>
+                    <button class="order-button">Order Now</button>
+                    <button class="order-button">Add to cart</button>
                 </div>
-                <h2 class="product-name">Pistachio Cream Cake</h2>
-                <button class="order-button">Order Now</button>
-                <button class="order-button">Add to cart</button>
-            </div>
 
-            <div class="product-card">
-                <div class="image-container">
-                    <img src="../img/c6.jpg" alt="Matcha Cake" class="product-image">
-                    <button class="hover-button">Quick View</button>
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="../img/c5.jpg" alt="Matcha Cake" class="product-image">
+                        <button class="hover-button" id="quickViewBtn">Quick View</button>
+                    </div>
+                    <h2 class="product-name">Pistachio Cream Cake</h2>
+                    <button class="order-button">Order Now</button>
+                    <button class="order-button">Add to cart</button>
                 </div>
-                <h2 class="product-name">Strawberry Swirlled Cheesecake</h2>
-                <button class="order-button">Order Now</button>
-                <button class="order-button">Add to cart</button>
-            </div>
 
-            <div class="product-card">
-                <div class="image-container">
-                    <img src="../img/c7.jpg" alt="Matcha Cake" class="product-image">
-                    <button class="hover-button">Quick View</button>
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="../img/c6.jpg" alt="Matcha Cake" class="product-image">
+                        <button class="hover-button" id="quickViewBtn">Quick View</button>
+                    </div>
+                    <h2 class="product-name">Strawberry Swirlled Cheesecake</h2>
+                    <button class="order-button">Order Now</button>
+                    <button class="order-button">Add to cart</button>
                 </div>
-                <h2 class="product-name"> Red Velvet Cream Cake</h2>
-                <button class="order-button">Order Now</button>
-                <button class="order-button">Add to cart</button>
-            </div>
 
-            <div class="product-card">
-                <div class="image-container">
-                    <img src="../img/c8.jpg" alt="Matcha Cake" class="product-image">
-                    <button class="hover-button">Quick View</button>
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="../img/c7.jpg" alt="Matcha Cake" class="product-image">
+                        <button class="hover-button" id="quickViewBtn">Quick View</button>
+                    </div>
+                    <h2 class="product-name"> Red Velvet Cream Cake</h2>
+                    <button class="order-button">Order Now</button>
+                    <button class="order-button">Add to cart</button>
                 </div>
-                <h2 class="product-name">Classic Vanilla Cake</h2>
-                <button class="order-button">Order Now</button>
-                <button class="order-button">Add to cart</button>
-            </div>
 
-            <div class="product-card">
-                <div class="image-container">
-                    <img src="../img/c9.jpg" alt="Matcha Cake" class="product-image">
-                    <button class="hover-button">Quick View</button>
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="../img/c8.jpg" alt="Matcha Cake" class="product-image">
+                        <button class="hover-button" id="quickViewBtn">Quick View</button>
+                    </div>
+                    <h2 class="product-name">Classic Vanilla Cake</h2>
+                    <button class="order-button">Order Now</button>
+                    <button class="order-button">Add to cart</button>
                 </div>
-                <h2 class="product-name">Mocha Cake</h2>
-                <button class="order-button">Order Now</button>
-                <button class="order-button">Add to cart</button>
+
+                <div class="product-card">
+                    <div class="image-container">
+                        <img src="../img/c9.jpg" alt="Matcha Cake" class="product-image">
+                        <button class="hover-button" id="quickViewBtn">Quick View</button>
+                    </div>
+                    <h2 class="product-name">Mocha Cake</h2>
+                    <button class="order-button">Order Now</button>
+                    <button class="order-button">Add to cart</button>
+                </div>
             </div>
         </div>
-    </div>
     </section>
 
-        <!--FOOTER-->
+
+      <!--FOOTER-->
         <footer class="footer">
             <div class="footer-content">
               <div class="footer-column">
@@ -243,5 +245,8 @@
             </div>
           </footer>
     </main>
+
+<div id="productModal"></div>
+<script src="../js/modal.js" defer></script>
 </body>
 </html>
