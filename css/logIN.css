@@ -23,13 +23,14 @@ body {
     color: #EEF7FF;
     font-size: 20px;
     width: 30%;
-    height: 40%;
+    height: 45%;
 }
 
 .form {
     margin-top: 20px;
     margin-bottom: 15px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -87,5 +88,18 @@ a {
 
 a:hover {
     color: #d9d9d9;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.login-link a {
+    color: white;
+    text-decoration: underline;
 }
 

@@ -1,24 +1,37 @@
 <?php
 
-// The Database class is designed to handle the connection to a MySQL database.
-class Database{
-    // These are the properties that store the database connection details.
-    private $host = 'localhost';      // The hostname of the database server.
-    private $username = 'root';       // The username used to connect to the database.
-    private $password = '';           // The password used to connect to the database (empty string means no password).
-    private $dbname = 'mooncakes';// The name of the database to connect to.
+// Database configuration
+$db_host = "localhost";     // Database host (usually localhost)
+$db_user = "root";          // Database username
+$db_pass = "";              // Database password (empty string if no password)
+$db_name = "mooncakes_db";  // Database name
 
-    protected $connection; // This property will hold the PDO connection object once connected.
+// Create connection
+$conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
 
-    // The connect() method is used to establish a connection to the database.
-    function connect(){
-        // Check if a connection has already been established. If not, create a new one.
-        if($this->connection === null){
-            // Create a new PDO instance with the provided database details.
-            $this->connection = new PDO("mysql:host=$this->host;dbname=$this->dbname", $this->username, $this->password);
-        }
-
-        // Return the established connection.
-        return $this->connection;
-    }
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
+
+// Optional: set character set
+if (!$conn->set_charset("utf8mb4")) {
+    die("Error loading character set utf8mb4: " . $conn->error);
+}
+
+// Example usage:
+function executeQuery($sql) {
+    global $conn;
+    $result = $conn->query($sql);
+    
+    if ($result === false) {
+        echo "Error executing query: " . $conn->error;
+        return false;
+    }
+    
+    return $result;
+}
+
+// Uncomment the following line to close the connection when done
+// $conn->close();
+?>

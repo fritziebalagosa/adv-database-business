@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <!-- Top Navigation Bar -->
+            <div class="top-nav">
+                <a href="#" class="logo">MOONCAKES</a>
+                <div class="search-container">
+                    <input class="text" type="search" placeholder="Search Our Finest Cakes & Sweets">
+                    <button class="search-button">
+                        <svg fill="#666" width="20px" height="20px" viewBox="0 -0.24 28.423 28.423" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.953,2.547A12.643,12.643,0,1,0,27.6,15.19,12.649,12.649,0,0,0,14.953,2.547Zm0,2A10.643,10.643,0,1,1,4.31,15.19,10.648,10.648,0,0,1,14.953,4.547Z"/>
+                            <path d="M30.441,28.789l-6.276-6.276a1,1,0,1,0-1.414,1.414L29.027,30.2a1,1,0,1,0,1.414-1.414Z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="icons-container">
+                    <div class="icon-wrapper">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <circle cx="12" cy="8" r="4"/>
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                        </svg>
+                    </div>
+                    <div class="icon-wrapper">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M4 4h2l2 11h10l2-7H8"/>
+                            <circle cx="10" cy="19" r="1"/>
+                            <circle cx="18" cy="19" r="1"/>
+                        </svg>
+                        <span class="cart-badge"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Navigation Bar (Menu) -->
+            <div class="bottom-nav">
+                <ul class="menu">
+                    <li><a href="index.html" class="menu-item">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="menu-item">Categories <i class="dropdown-arrow"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#bday">Birthday Cakes</a></li>
+                            <li><a href="#wedding">Wedding Cakes</a></li>
+                            <li><a href="#">Graduation Cakes</a></li>
+                            <li><a href="#">Christening Cakes</a></li>
+                            <li><a href="#">Cupcakes and Minis</a></li>
+                            <li><a href="#">Cheesecakes</a></li>
+                            <li><a href="#">Ice Cream Cakes</a></li>
+                            <li><a href="#">Mousse Cakes</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="menu-item">Flavours <i class="dropdown-arrow"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Classic Chocolate</a></li>
+                            <li><a href="#">Classic Vanilla</a></li>
+                            <li><a href="#">Strawberry</a></li>
+                            <li><a href="#">Matcha</a></li>
+                            <li><a href="#">Mocha</a></li>
+                            <li><a href="#">Cookies and Cream</a></li>
+                            <li><a href="#">Salted Caramel</a></li>
+                            <li><a href="#">Pistachio</a></li>
+                            <li><a href="#">Hazelnut</a></li>
+                            <li><a href="#">Ube</a></li>
+                            <li><a href="#">Red Velvet</a></li>
+                            <li><a href="#">Blueberry</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html#best-cakes" class="menu-item">Best Sellers</a></li>
+                    <li><a href="#" class="menu-item">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    
+    <div class="cart-container">
+        <!-- Back Button -->
+        <a href="#" class="back-button"><i class="fas fa-arrow-left"></i></a>
+
+        <!-- Cart Title -->
+        <h2 class="cart-title">My Cart</h2>
+
+        <!-- Cart Items -->
+        <div class="cart-items">
+           
+            <!-- First Item -->
+            <div class="cart-item">
+                <input type="checkbox">
+                <img src="../img/c9.jpg" alt="Cake">
+                <div class="item-details">
+                    <h3>Cake Name</h3>
+                    <p><strong>Variations:</strong></p>
+                    <p>buy my cake</p>
+                </div>
+                <span class="price">$1200</span>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="text" value="1">
+                    <button>+</button>
+                </div>
+                <a href="#" class="edit-link">EDIT</a>
+                <button class="delete"><i class="fas fa-trash"></i></button>
+            </div>
+
+            <!-- Second Item -->
+            <div class="cart-item">
+                <input type="checkbox">
+                <img src="../img/c8.jpg" alt="Cake">
+                <div class="item-details">
+                    <h3>Cake Name</h3>
+                    <p><strong>Variations:</strong></p>
+                    <p>buy my cake</p>
+                </div>
+                <span class="price">$1500</span>
+                <div class="quantity">
+                    <button>-</button>
+                    <input type="text" value="1">
+                    <button>+</button>
+                </div>
+                <a href="#" class="edit-link">EDIT</a>
+                <button class="delete"><i class="fas fa-trash"></i></button>
+            </div>
+
+        </div>
+
+        <!-- Cart Footer -->
+        <div class="cart-footer">
+            <div class="select-all">
+                <input type="checkbox">
+                <label>Select All</label>
+            </div>
+            <span class="total">Total: <strong>$1,500</strong></span>
+            <button class="checkout-btn">Proceed to Payment</button>
+        </div>
+    </div>
+
+   
+</body>
+</html>

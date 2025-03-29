@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mooncakes - About Us</title>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <style>
+        /* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* First Navbar */
+.navbar {
+    background-color: #78A9A1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 60%;
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icons a {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+/* Second Navbar */
+.nav-links {
+    background-color: #C5E3E0;
+    display: flex;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2D4E50;
+    font-weight: bold;
+    position: relative;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* About Us Section */
+.about-section {
+    display: flex;
+    height: 100vh;
+}
+
+.about-text {
+    background-color: #78A9A1;
+    width: 50%;
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-text h2 {
+    font-family: 'Prata', serif;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.about-text img {
+    width: 250px; /* Adjusted size */
+    margin-bottom: 15px;
+}
+
+.divider-bar {
+    width: 300px;
+    height: 4px;
+    background-color: white;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.about-text p {
+    font-family: 'Prata', serif;
+    font-size: 16px;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ddd;
+}
+
+.about-image {
+    width: 50%;
+    background: url('mainbg.png') no-repeat center center/cover;
+}
+
+    </style>
+</head>
+<body>
+    <!--NAVIGATION BAR-->
+    <header>
+        <div class="nav-container">
+            <div class="top-nav">
+                <a href="#" class="logo">MOONCAKES</a>
+                <div class="search-container">
+                    <input class="text" type="search" placeholder="Search Our Finest Cakes & Sweets">
+                    
+                    <button class="search-button">
+                        <svg fill="#666" width="20px" height="20px" viewBox="0 -0.24 28.423 28.423" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.953,2.547A12.643,12.643,0,1,0,27.6,15.19,12.649,12.649,0,0,0,14.953,2.547Zm0,2A10.643,10.643,0,1,1,4.31,15.19,10.648,10.648,0,0,1,14.953,4.547Z"/>
+                            <path d="M30.441,28.789l-6.276-6.276a1,1,0,1,0-1.414,1.414L29.027,30.2a1,1,0,1,0,1.414-1.414Z"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="icons-container">
+                    <div class="icon-wrapper">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <circle cx="12" cy="8" r="4"/>
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                        </svg>
+                    </div>
+                    <div class="icon-wrapper"><a href="../html/cart.html">
+                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                            <path d="M4 4h2l2 11h10l2-7H8"/>
+                            <circle cx="10" cy="19" r="1"/>
+                            <circle cx="18" cy="19" r="1"/>
+                        </svg>
+                        <span class="cart-badge"></span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-nav">
+                <ul class="menu">
+                    <li><a href="../html/index.html" class="menu-item">Home</a></li>
+                    <ul class="navbar-menu">
+                        <li class="dropdown">
+                            <a href="#" class="menu-item">Categories <i class="dropdown-arrow"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="products.html#bday">Birthday Cakes</a></li>
+                                <li><a href="products.html#wedding">Wedding Cakes</a></li>
+                                <li><a href="#">Graduation Cakes</a></li>
+                                <li><a href="#">Christening Cakes</a></li>
+                                <li><a href="#">Cupcakes and Minis</a></li>
+                                <li><a href="#">Cheesecakes</a></li>
+                                <li><a href="#">Ice Cream Cakes</a></li>
+                                <li><a href="#">Mousse Cakes</a></li>
+                            </ul>
+                        </li>
+                    
+                        <li class="dropdown">
+                            <a href="#" class="menu-item">Flavours <i class="dropdown-arrow"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Classic Chocolate</a></li>
+                                <li><a href="#">Classic Vanilla</a></li>
+                                <li><a href="#">Strawberry</a></li>
+                                <li><a href="#">Matcha</a></li>
+                                <li><a href="#">Mocha</a></li>
+                                <li><a href="#">Cookies and Cream</a></li>
+                                <li><a href="#">Salted Caramel</a></li>
+                                <li><a href="#">Pistachio</a></li>
+                                <li><a href="#">Hazlenut</a></li>
+                                <li><a href="#">Ube</a></li>
+                                <li><a href="#">Red Velvet</a></li>
+                                <li><a href="#">Blueberry</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <li><a href="#best-cakes" class="menu-item">Best Sellers</a></li>
+                    <li><a href="#" class="menu-item">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <div class="about-section">
+        <div class="about-text">
+            <h2>ABOUT US</h2>
+            <img src="../img/logo.png" alt="Mooncakes Logo">
+            <div class="divider-bar"></div>
+            <p>
+                Welcome to Moon Cakes, where every bite is a taste of sweetness and perfection.
+                Our passion for baking shines through in our handcrafted cakes, made with the finest ingredients and a touch of creativity.
+                Whether you're celebrating a birthday, wedding, or just craving something delightful, we have the perfect treat for you.
+                From classic flavors to unique, celestial-inspired designs, our cakes are baked fresh with love and care.
+                At Moon Cakes, we believe every occasion deserves something special—let us make your moments unforgettable with our heavenly desserts!
+            </p>
+           
+            <!-- Social Media Links -->
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
+
+        <!-- Right Side: Background Image -->
+        <div class="about-image">
+            <img src="" alt="">
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<header>
+    <div class="nav-container">
+        <div class="top-nav">
+            <a href="#" class="logo">MOONCAKES</a>
+            <div class="search-container">
+                <input class="text" type="search" placeholder="Search Our Finest Cakes & Sweets">
+                
+                <button class="search-button">
+                    <svg fill="#666" width="20px" height="20px" viewBox="0 -0.24 28.423 28.423" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.953,2.547A12.643,12.643,0,1,0,27.6,15.19,12.649,12.649,0,0,0,14.953,2.547Zm0,2A10.643,10.643,0,1,1,4.31,15.19,10.648,10.648,0,0,1,14.953,4.547Z"/>
+                        <path d="M30.441,28.789l-6.276-6.276a1,1,0,1,0-1.414,1.414L29.027,30.2a1,1,0,1,0,1.414-1.414Z"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="icons-container">
+                <div class="icon-wrapper">
+                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <circle cx="12" cy="8" r="4"/>
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                    </svg>
+                </div>
+                <div class="icon-wrapper"><a href="../html/cart.html">
+                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <path d="M4 4h2l2 11h10l2-7H8"/>
+                        <circle cx="10" cy="19" r="1"/>
+                        <circle cx="18" cy="19" r="1"/>
+                    </svg>
+                    <span class="cart-badge"></span>
+                </a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-nav">
+            <ul class="menu">
+                <li><a href="#" class="menu-item">Home</a></li>
+                <ul class="navbar-menu">
+                    <li class="dropdown">
+                        <a href="#" class="menu-item">Categories <i class="dropdown-arrow"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="products.html#bday">Birthday Cakes</a></li>
+                            <li><a href="products.html#wedding">Wedding Cakes</a></li>
+                            <li><a href="#">Graduation Cakes</a></li>
+                            <li><a href="#">Christening Cakes</a></li>
+                            <li><a href="#">Cupcakes and Minis</a></li>
+                            <li><a href="#">Cheesecakes</a></li>
+                            <li><a href="#">Ice Cream Cakes</a></li>
+                            <li><a href="#">Mousse Cakes</a></li>
+                        </ul>
+                    </li>
+                
+                    <li class="dropdown">
+                        <a href="#" class="menu-item">Flavours <i class="dropdown-arrow"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Classic Chocolate</a></li>
+                            <li><a href="#">Classic Vanilla</a></li>
+                            <li><a href="#">Strawberry</a></li>
+                            <li><a href="#">Matcha</a></li>
+                            <li><a href="#">Mocha</a></li>
+                            <li><a href="#">Cookies and Cream</a></li>
+                            <li><a href="#">Salted Caramel</a></li>
+                            <li><a href="#">Pistachio</a></li>
+                            <li><a href="#">Hazlenut</a></li>
+                            <li><a href="#">Ube</a></li>
+                            <li><a href="#">Red Velvet</a></li>
+                            <li><a href="#">Blueberry</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <li><a href="#best-cakes" class="menu-item">Best Sellers</a></li>
+                <li><a href="../html/aboutUS.html" class="menu-item">About Us</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<body>
+    <header class="header">
+        <a href="#" class="back-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+        </a>
+        <h1>My Profile</h1>
+    </header>
+
+    <div class="main-content">
+        <section class="profile-section">
+            <div class="profile-image">
+                <img src="../img/hg.jpg" alt="Profile Picture" id="profile-image">
+            </div>
+            <div class="profile-details">
+                <h2 id="profile-name">Hermione Granger</h2>
+                <p class="profile-info">Email: <span id="profile-email">sampleemail.gmail.com</span></p>
+                <p class="profile-info">Contact: <span id="profile-contact"></span>09123456789</p>
+            </div>
+            <button class="edit-profile-btn" id="edit-profile-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                </svg>
+                Edit Profile
+            </button>
+        </section>
+
+        <div class="tab-navigation">
+            <button class="tab-button active" data-tab="all">All</button>
+            <button class="tab-button" data-tab="to-pay">To Pay</button>
+            <button class="tab-button" data-tab="processing">Processing</button>
+            <button class="tab-button" data-tab="to-receive">To Receive</button>
+            <button class="tab-button" data-tab="completed">Completed</button>
+            <button class="tab-button" data-tab="cancelled">Cancelled</button>
+        </div>
+
+        <div class="tab-content">
+            <div class="tab-pane active" id="all">
+                <div class="order-grid">
+                    <div class="order-item">
+                        <div class="order-image">
+                            <img src="../img/c2.jpg" alt="Product Image">
+                        </div>
+                        <div class="order-content">
+                            <h3 class="order-title">Chocolate Cake</h3>
+                            <p class="order-id">Order ID: 0203150305</p>
+                            <p class="order-price">₱1,799.50</p>
+                            <div class="order-actions">
+                                <span class="order-status status-to-pay">To Pay</span>
+                                <div class="order-buttons">
+                                    <button class="edit-btn">PAY NOW</button>
+                                    <button class="view-btn" data-order="0203150305">VIEW DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <div class="order-image">
+                            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Product Image">
+                        </div>
+                        <div class="order-content">
+                            <h3 class="order-title">Strawberry Cheesecake</h3>
+                            <p class="order-id">Order ID: 0203150306</p>
+                            <p class="order-price">₱2,125.00</p>
+                            <div class="order-actions">
+                                <span class="order-status status-processing">Processing</span>
+                                <div class="order-buttons">
+                                    <button class="edit-btn">TRACK</button>
+                                    <button class="view-btn" data-order="0203150306">VIEW DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <div class="order-image">
+                            <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Product Image">
+                        </div>
+                        <div class="order-content">
+                            <h3 class="order-title">Red Velvet Cupcakes</h3>
+                            <p class="order-id">Order ID: 0203150307</p>
+                            <p class="order-price">₱1,437.50</p>
+                            <div class="order-actions">
+                                <span class="order-status status-completed">Completed</span>
+                                <div class="order-buttons">
+                                    <button class="edit-btn">REVIEW</button>
+                                    <button class="view-btn" data-order="0203150307">VIEW DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <div class="order-image">
+                            <img src="https://images.unsplash.com/photo-1557925923-cd4648e211a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Product Image">
+                        </div>
+                        <div class="order-content">
+                            <h3 class="order-title">Vanilla Birthday Cake</h3>
+                            <p class="order-id">Order ID: 0203150308</p>
+                            <p class="order-price">₱1,999.50</p>
+                            <div class="order-actions">
+                                <span class="order-status status-processing">Processing</span>
+                                <div class="order-buttons">
+                                    <button class="edit-btn">TRACK</button>
+                                    <button class="view-btn" data-order="0203150308">VIEW DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="to-pay">
+                <div class="order-grid">
+                    <div class="order-item">
+                        <div class="order-image">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Product Image">
+                        </div>
+                        <div class="order-content">
+                            <h3 class="order-title">Chocolate Cake</h3>
+                            <p class="order-id">Order ID: 0203150305</p>
+                            <p class="order-price">₱1,799.50</p>
+                            <div class="order-actions">
+                                <span class="order-status status-to-pay">To Pay</span>
+                                <div class="order-buttons">
+                                    <button class="edit-btn">PAY NOW</button>
+                                    <button class="view-btn" data-order="0203150305">VIEW DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="processing">
+                <div class="order-grid">
+                    <div class="order-item">
+                        <div class="order-image">
+                            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Product Image">
+                        </div>
+                        <div class="order-content">
+                            <h3 class="order-title">Strawberry Cheesecake</h3>
+                            <p class="order-id">Order ID: 0203150306</p>
+                            <p class="order-price">₱2,125.00</p>
+                            <div class="order-actions">
+                                <span class="order-status status-processing">Processing</span>
+                                <div class="order-buttons">
+                                    <button class="edit-btn">TRACK</button>
+                                    <button class="view-btn" data-order="0203150306">VIEW DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-item">
+                        <div class="order-image">
+                            <img src="https://images.unsplash.com/photo-1557925923-cd4648e211a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Product Image">
+                        </div>
+                        <div class="order-content">
+                            <h3 class="order-title">Vanilla Birthday Cake</h3>
+                            <p class="order-id">Order ID: 0203150308</p>
+                            <p class="order-price">₱1,999.50</p>
+                            <div class="order-actions">
+                                <span class="order-status status-processing">Processing</span>
+                                <div class="order-buttons">
+                                    <button class="edit-btn">TRACK</button>
+                                    <button class="view-btn" data-order="0203150308">VIEW DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="to-receive">
+                <div class="no-orders">
+                    <p>No orders to receive at the moment.</p>
+                    <button class="edit-btn">BROWSE PRODUCTS</button>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="completed">
+                <div class="order-grid">
+                    <div class="order-item">
+                        <div class="order-image">
+                            <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Product Image">
+                        </div>
+                        <div class="order-content">
+                            <h3 class="order-title">Red Velvet Cupcakes</h3>
+                            <p class="order-id">Order ID: 0203150307</p>
+                            <p class="order-price">₱1,437.50</p>
+                            <div class="order-actions">
+                                <span class="order-status status-completed">Completed</span>
+                                <div class="order-buttons">
+                                    <button class="edit-btn">REVIEW</button>
+                                    <button class="view-btn" data-order="0203150307">VIEW DETAILS</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="cancelled">
+                <div class="no-orders">
+                    <p>No cancelled orders.</p>
+                    <button class="edit-btn">BROWSE PRODUCTS</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Edit Profile Modal -->
+    <div class="modal-overlay" id="edit-profile-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Edit Profile</h3>
+                <button class="modal-close" id="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="edit-profile-form">
+                    <div class="form-group file-upload">
+                        <div class="file-upload-preview">
+                            <img id="profile-preview" src="" alt="Profile Preview">
+                        </div>
+                        <label for="profile-upload" class="file-upload-label">
+                            Upload Photo
+                        </label>
+                        <input type="file" id="profile-upload" class="file-upload-input" accept="image/*">
+                    </div>
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" class="form-control" value="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-control" value="johndoe@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact" class="form-label">Contact Number</label>
+                        <input type="tel" id="contact" class="form-control" value="+1 234 567 8901" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" id="cancel-edit">Cancel</button>
+                <button class="btn-primary" id="save-profile">Save Changes</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Details Modal -->
+    <div class="modal-overlay" id="order-details-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h3 class="modal-title">Order Details</h3>
+                <button class="modal-close" id="close-order-details">&times;</button>
+            </div>
+            <div class="order-details-content">
+                <div class="order-details-header">
+                    <img id="order-details-image" src="/placeholder.svg" alt="Product Image">
+                </div>
+                <div class="order-details-body">
+                    <h2 class="order-details-title" id="order-details-title"></h2>
+                    <div class="order-details-meta">
+                        <div class="order-details-price" id="order-details-price"></div>
+                        <div class="order-details-status" id="order-details-status"></div>
+                    </div>
+                    <div class="order-details-info">
+                        <div class="order-details-info-item">
+                            <div class="order-details-info-label">Order ID</div>
+                            <div class="order-details-info-value" id="order-details-id"></div>
+                        </div>
+                        <div class="order-details-info-item">
+                            <div class="order-details-info-label">Order Date</div>
+                            <div class="order-details-info-value">March 15, 2023</div>
+                        </div>
+                        <div class="order-details-info-item">
+                            <div class="order-details-info-label">Delivery Address</div>
+                            <div class="order-details-info-value">123 Main St, Anytown, PH 12345</div>
+                        </div>
+                        <div class="order-details-info-item">
+                            <div class="order-details-info-label">Payment Method</div>
+                            <div class="order-details-info-value">Credit Card</div>
+                        </div>
+                    </div>
+                    <div class="order-details-description">
+                        <p>This delicious cake is made with the finest ingredients. Perfect for birthdays, anniversaries, or any special occasion.</p>
+                    </div>
+                    <button class="edit-btn" id="order-details-action">PAY NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/profile.js"></script>
+</body>
+</html>
