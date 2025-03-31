@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/cart.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 <body>
     <header>
         <div class="nav-container">
-            <!-- Top Navigation Bar -->
             <div class="top-nav">
                 <a href="#" class="logo">MOONCAKES</a>
                 <div class="search-container">
                     <input class="text" type="search" placeholder="Search Our Finest Cakes & Sweets">
+                    
                     <button class="search-button">
                         <svg fill="#666" width="20px" height="20px" viewBox="0 -0.24 28.423 28.423" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14.953,2.547A12.643,12.643,0,1,0,27.6,15.19,12.649,12.649,0,0,0,14.953,2.547Zm0,2A10.643,10.643,0,1,1,4.31,15.19,10.648,10.648,0,0,1,14.953,4.547Z"/>
@@ -21,64 +24,91 @@
                         </svg>
                     </button>
                 </div>
+                
                 <div class="icons-container">
-                    <div class="icon-wrapper">
-                        <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-                            <circle cx="12" cy="8" r="4"/>
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                        </svg>
-                    </div>
-                    <div class="icon-wrapper">
+                    <header class="profile">
+                        <div class="dropdown" id="profile-dropdown">
+                            <div class="icon-wrapper">
+                                <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                    <circle cx="12" cy="8" r="4"/>
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                </svg>
+                            </div>
+                            <div class="dropdown-content">
+                                <a href="../html/profile.html" class="dropdown-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="8" r="4"/>
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                    </svg>
+                                    My Profile
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a href="http://localhost:3000/php/logIN.php" class="dropdown-item">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                        <polyline points="16 17 21 12 16 7"></polyline>
+                                        <line x1="21" y1="12" x2="9" y2="12"></line>
+                                    </svg>
+                                    Log Out
+                                </a>
+                            </div>
+                        </div>
+
+                    <div class="icon-wrapper"><a href="../html/cart.html">
                         <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
                             <path d="M4 4h2l2 11h10l2-7H8"/>
                             <circle cx="10" cy="19" r="1"/>
                             <circle cx="18" cy="19" r="1"/>
                         </svg>
                         <span class="cart-badge"></span>
+                    </a>
                     </div>
                 </div>
             </div>
-            <!-- Bottom Navigation Bar (Menu) -->
             <div class="bottom-nav">
                 <ul class="menu">
-                    <li><a href="index.html" class="menu-item">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="menu-item">Categories <i class="dropdown-arrow"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#bday">Birthday Cakes</a></li>
-                            <li><a href="#wedding">Wedding Cakes</a></li>
-                            <li><a href="#">Graduation Cakes</a></li>
-                            <li><a href="#">Christening Cakes</a></li>
-                            <li><a href="#">Cupcakes and Minis</a></li>
-                            <li><a href="#">Cheesecakes</a></li>
-                            <li><a href="#">Ice Cream Cakes</a></li>
-                            <li><a href="#">Mousse Cakes</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="menu-item">Flavours <i class="dropdown-arrow"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Classic Chocolate</a></li>
-                            <li><a href="#">Classic Vanilla</a></li>
-                            <li><a href="#">Strawberry</a></li>
-                            <li><a href="#">Matcha</a></li>
-                            <li><a href="#">Mocha</a></li>
-                            <li><a href="#">Cookies and Cream</a></li>
-                            <li><a href="#">Salted Caramel</a></li>
-                            <li><a href="#">Pistachio</a></li>
-                            <li><a href="#">Hazelnut</a></li>
-                            <li><a href="#">Ube</a></li>
-                            <li><a href="#">Red Velvet</a></li>
-                            <li><a href="#">Blueberry</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="index.html#best-cakes" class="menu-item">Best Sellers</a></li>
-                    <li><a href="#" class="menu-item">About Us</a></li>
+                    <li><a href="#" class="menu-item">Home</a></li>
+                    <ul class="navbar-menu">
+                        <li class="dropdown">
+                            <a href="../html/products.html" class="menu-item">Categories <i class="dropdown-arrow"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="products.html#bday">Birthday Cakes</a></li>
+                                <li><a href="products.html#wedding">Wedding Cakes</a></li>
+                                <li><a href="products.html#graduation">Graduation Cakes</a></li>
+                                <li><a href="products.html#christening">Christening Cakes</a></li>
+                                <li><a href="products.html#cupcakes">Cupcakes and Minis</a></li>
+                                <li><a href="products.html#cheesecakes">Cheesecakes</a></li>
+                                <li><a href="products.html#icecream">Ice Cream Cakes</a></li>
+                                <li><a href="products.html#mousse">Mousse Cakes</a></li>
+                            </ul>
+                        </li>
+                    
+                        <li class="dropdown">
+                            <a href="../html/flavours.html" class="menu-item">Flavours <i class="dropdown-arrow"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="flavours.html#chocolate">Classic Chocolate</a></li>
+                                <li><a href="flavours.html#vannila">Classic Vanilla</a></li>
+                                <li><a href="flavours.html#strawberry">Strawberry</a></li>
+                                <li><a href="flavours.html#matcha">Matcha</a></li>
+                                <li><a href="flavours.html#mocha">Mocha</a></li>
+                                <li><a href="flavours.html#cookiescream">Cookies and Cream</a></li>
+                                <li><a href="flavours.html#caramel">Salted Caramel</a></li>
+                                <li><a href="flavours.html#pistachio">Pistachio</a></li>
+                                <li><a href="flavours.html#hazlenut">Hazlenut</a></li>
+                                <li><a href="flavours.html#ube">Ube</a></li>
+                                <li><a href="flavours.html#velvet">Red Velvet</a></li>
+                                <li><a href="flavours.html#blueberry">Blueberry</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <li><a href="#best-cakes" class="menu-item">Best Sellers</a></li>
+                    <li><a href="../html/aboutUS.html" class="menu-item">About Us</a></li>
                 </ul>
             </div>
         </div>
     </header>
-
+    <script src="../js/icon.js"></script>
     
     <div class="cart-container">
         <!-- Back Button -->
@@ -99,13 +129,13 @@
                     <p><strong>Variations:</strong></p>
                     <p>buy my cake</p>
                 </div>
-                <span class="price">$1200</span>
+                <span class="price" data-base-price="1200">₱1,200</span>
                 <div class="quantity">
-                    <button>-</button>
-                    <input type="text" value="1">
-                    <button>+</button>
+                    <button class="quantity-btn minus">-</button>
+                    <input type="text" value="1" class="quantity-input">
+                    <button class="quantity-btn plus">+</button>
                 </div>
-                <a href="#" class="edit-link">EDIT</a>
+                <a href="#" class="edit-link" data-item-id="1">View Order Details</a>
                 <button class="delete"><i class="fas fa-trash"></i></button>
             </div>
 
@@ -118,13 +148,13 @@
                     <p><strong>Variations:</strong></p>
                     <p>buy my cake</p>
                 </div>
-                <span class="price">$1500</span>
+                <span class="price" data-base-price="1500">₱1,500</span>
                 <div class="quantity">
-                    <button>-</button>
-                    <input type="text" value="1">
-                    <button>+</button>
+                    <button class="quantity-btn minus">-</button>
+                    <input type="text" value="1" class="quantity-input">
+                    <button class="quantity-btn plus">+</button>
                 </div>
-                <a href="#" class="edit-link">EDIT</a>
+                <a href="#" class="edit-link" data-item-id="2">View Order Details</a>
                 <button class="delete"><i class="fas fa-trash"></i></button>
             </div>
 
@@ -133,14 +163,292 @@
         <!-- Cart Footer -->
         <div class="cart-footer">
             <div class="select-all">
-                <input type="checkbox">
+                <input type="checkbox" id="select-all-checkbox">
                 <label>Select All</label>
             </div>
-            <span class="total">Total: <strong>$1,500</strong></span>
-            <button class="checkout-btn">Proceed to Payment</button>
+            <span class="total">Total: <strong>₱1,500</strong></span>
+            <button class="checkout-btn"><a href="../html/order_form.html">Proceed to Payment</a></button>
         </div>
     </div>
 
-   
+    <!-- Order Details Modal -->
+    <div id="orderDetailsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal"></span>
+            <div class="modal-header">
+                <h2>Order Details</h2>
+                <div>
+                    <a id="editOrderBtn" href="../html/order_form.html" class="edit-btn">Edit Order</a>
+                </div>
+            </div>
+            
+            <!-- Size Section -->
+            <div class="order-details-section">
+                <div class="section-title">Size</div>
+                <div class="options-grid">
+                    <div class="option-card selected" data-option="size" data-value="6inch" data-price="750">
+                        <div class="option-title">6 inch</div>
+                        <div class="option-description">Serves 6-8</div>
+                        <div class="option-price">₱750</div>
+                    </div>
+                    <div class="option-card" data-option="size" data-value="8inch" data-price="950">
+                        <div class="option-title">8 inch</div>
+                        <div class="option-description">Serves 10-12</div>
+                        <div class="option-price">₱950</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Decoration Section -->
+            <div class="order-details-section">
+                <div class="section-title">Decoration</div>
+                <div class="options-grid">
+                    <div class="option-card selected" data-option="decoration" data-value="floral" data-price="0">
+                        <div class="option-title">Floral (as shown)</div>
+                        <div class="option-description">White flowers</div>
+                        <div class="option-price">Included</div>
+                    </div>
+                    <div class="option-card" data-option="decoration" data-value="minimalist" data-price="0">
+                        <div class="option-title">Minimalist</div>
+                        <div class="option-description">Clean design/No toppings, just message</div>
+                        <div class="option-price">Included</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Toppings Section -->
+            <div class="order-details-section">
+                <div class="section-title">Toppings</div>
+                <div class="options-grid">
+                    <div class="option-card selected" data-option="toppings" data-value="additional" data-price="100">
+                        <div class="option-title">Toppings</div>
+                        <div class="option-description">Additional Topping</div>
+                        <div class="option-price">+₱100</div>
+                    </div>
+                    <div class="option-card" data-option="toppings" data-value="custom" data-price="200">
+                        <div class="option-title">Custom Design</div>
+                        <div class="option-description">Personalized</div>
+                        <div class="option-price">₱200</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Message on Cake -->
+            <div class="order-details-section">
+                <div class="section-title">Message on Cake</div>
+                <div class="form-group">
+                    <input type="text" id="cakeMessage" class="form-control" value="Happy Birthday!" readonly>
+                </div>
+            </div>
+            
+            <!-- Quantity -->
+            <div class="order-details-section">
+                <div class="section-title">Quantity</div>
+                <div class="form-group">
+                    <input type="number" id="orderQuantity" class="form-control" value="1" min="1" readonly>
+                </div>
+            </div>
+            
+            <!-- Delivery Method -->
+            <div class="order-details-section">
+                <div class="section-title">Delivery Method</div>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="pickup" name="delivery" value="pickup" checked disabled>
+                        <label for="pickup">Pick Up</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="delivery" name="delivery" value="delivery" data-price="150" disabled>
+                        <label for="delivery">Delivery (+₱150)</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Payment Method -->
+            <div class="order-details-section">
+                <div class="section-title">Payment Method</div>
+                <div class="radio-group">
+                    <div class="radio-option">
+                        <input type="radio" id="gcash" name="payment" value="gcash" checked disabled>
+                        <label for="gcash">GCash</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="paymaya" name="payment" value="paymaya" disabled>
+                        <label for="paymaya">PayMaya</label>
+                    </div>
+                    <div class="radio-option">
+                        <input type="radio" id="cod" name="payment" value="cod" disabled>
+                        <label for="cod">Cash on Delivery</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pick Up/Delivery Date & Time -->
+            <div class="order-details-section">
+                <div class="section-title">Pick Up/Delivery Date & Time</div>
+                <div class="date-time-group">
+                    <div class="form-group">
+                        <label>Date</label>
+                        <input type="date" id="orderDate" class="form-control" value="2023-05-15" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Time</label>
+                        <input type="time" id="orderTime" class="form-control" value="14:30" readonly>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Special Instructions -->
+            <div class="order-details-section">
+                <div class="section-title">Special Instructions</div>
+                <div class="form-group">
+                    <textarea id="specialInstructions" class="form-control" readonly>For personalization and special requests.</textarea>
+                </div>
+            </div>
+
+            <!-- Modal Footer with Total -->
+            <div class="modal-footer">
+                <div class="modal-total">Total: <span id="orderTotal">₱850</span></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+         // Basic functionality for quantity buttons in cart
+         document.querySelectorAll('.quantity-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const input = this.parentNode.querySelector('.quantity-input');
+                let value = parseInt(input.value);
+                
+                if (this.classList.contains('plus')) {
+                    value++;
+                } else if (this.classList.contains('minus') && value > 1) {
+                    value--;
+                }
+                
+                input.value = value;
+                
+                // Update price in cart
+                updateCartItemPrice(this.closest('.cart-item'), value);
+            });
+        });
+
+        // Update cart item price based on quantity
+        function updateCartItemPrice(cartItem, quantity) {
+            const priceElement = cartItem.querySelector('.price');
+            const basePrice = parseInt(priceElement.getAttribute('data-base-price'));
+            
+            const newPrice = basePrice * quantity;
+            priceElement.textContent = `₱${newPrice.toLocaleString()}`;
+            
+            // Update cart total
+            updateCartTotal();
+        }
+
+        // Update cart total
+        function updateCartTotal() {
+            const prices = Array.from(document.querySelectorAll('.price')).map(el => 
+                parseInt(el.textContent.replace(/[^\d]/g, ''))
+            );
+            const total = prices.reduce((sum, price) => sum + price, 0);
+            document.querySelector('.total strong').textContent = `₱${total.toLocaleString()}`;
+        }
+
+        // Select all functionality
+        const selectAllCheckbox = document.getElementById('select-all-checkbox');
+        if (selectAllCheckbox) {
+            selectAllCheckbox.addEventListener('change', function() {
+                document.querySelectorAll('.cart-item input[type="checkbox"]').forEach(checkbox => {
+                    checkbox.checked = this.checked;
+                });
+            });
+        }
+        
+        // Modal functionality
+        const modal = document.getElementById('orderDetailsModal');
+        const viewDetailsBtns = document.querySelectorAll('.edit-link');
+        const closeModal = document.querySelector('.close-modal');
+        const editOrderBtn = document.getElementById('editOrderBtn');
+        
+        // Hide modal on page load
+        window.addEventListener('DOMContentLoaded', function () {
+            if (sessionStorage.getItem('modalOpen') === 'true') {
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            } else {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Open modal when View Order Details is clicked
+        viewDetailsBtns.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const itemId = this.getAttribute('data-item-id');
+                
+                // Store the item ID in the edit button's URL as a query parameter
+                editOrderBtn.href = `../html/order-form.html?itemId=${itemId}`;
+                
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+                sessionStorage.setItem('modalOpen', 'true');
+
+                // Remove URL query parameter to prevent modal from reopening on reload
+                const url = new URL(window.location);
+                url.searchParams.delete('modal');
+                window.history.replaceState({}, document.title, url);
+                
+                // Calculate and display total
+                calculateOrderTotal();
+            });
+        });
+        
+        // Close modal when X is clicked
+        closeModal.addEventListener('click', function() {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+            sessionStorage.removeItem('modalOpen');
+        });
+        
+        // Close modal when clicking outside the modal content
+        window.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+                sessionStorage.removeItem('modalOpen');
+            }
+        });
+        
+        // Calculate order total
+        function calculateOrderTotal() {
+            let total = 0;
+            
+            // Get base price from selected size
+            const selectedSize = document.querySelector('.option-card[data-option="size"].selected');
+            total += parseInt(selectedSize.getAttribute('data-price'));
+            
+            // Add toppings price
+            const selectedToppings = document.querySelector('.option-card[data-option="toppings"].selected');
+            total += parseInt(selectedToppings.getAttribute('data-price'));
+            
+            // Add delivery fee if selected
+            if (document.getElementById('delivery').checked) {
+                total += parseInt(document.getElementById('delivery').getAttribute('data-price'));
+            }
+            
+            // Multiply by quantity
+            const quantity = parseInt(document.getElementById('orderQuantity').value);
+            total *= quantity;
+            
+            // Update total display
+            document.getElementById('orderTotal').textContent = `₱${total.toLocaleString()}`;
+            
+            return total;
+        }
+        
+        // Calculate initial order total
+        calculateOrderTotal();
+    </script>
 </body>
 </html>

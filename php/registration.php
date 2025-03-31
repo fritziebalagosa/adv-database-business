@@ -1,12 +1,11 @@
 <?php
 // Database configuration
-$db_host = "localhost";
-$db_user = "root";
-$db_pass = ""; // Update this to match your MySQL root password
-$db_name = "mooncakes_db";
+include 'database.php'; 
 
-// Create connection
-$conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
+// Ensure $conn is a valid mysqli object
+if (!isset($conn) || !$conn instanceof mysqli) {
+    die("Database connection not properly initialized.");
+}
 
 // Check connection
 if ($conn->connect_error) {
@@ -17,10 +16,12 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $conn->real_escape_string($_POST['username']);
     $email = $conn->real_escape_string($_POST['email']);
+    $contact_num = $conn->real_escape_string($_POST['contact_num']); 
     $password = password_hash($_POST['password'], PASSWORD_BCRYPT); // Hash the password for security
 
-    // Insert user into the database
-    $sql = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')";
+    // Insert user into the database 
+    $sql = "INSERT INTO users (username, email, contact_num, password) 
+            VALUES ('$username', '$email', '$contact_num', '$password')";
 
     if ($conn->query($sql) === TRUE) {
         // Redirect to login page after successful registration
@@ -34,6 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 // Close the connection
 $conn->close();
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -53,17 +55,21 @@ $conn->close();
                
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
-               
+
+                <label for="phone">Contact Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your contact number" pattern="[0-9]{10,11}" required>
+
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" placeholder="Enter your password" required>
             </div>
 
             <button type="submit" class="btn">Sign Up</button>
         </form>
+
+        <div>
+    <p class="login-text">Already have an account? <a href="http://localhost:3000/php/logIN.php">Login here</a></p>
+</div>
     </div>
 
-    <div class="login-link">
-            Already have an account? <a href="logIN.php">Login here</a>
-        </div>
 </body>
 </html>

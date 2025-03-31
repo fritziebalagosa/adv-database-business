@@ -575,6 +575,207 @@ body {
     font-size: 16px;
 }
 
+.checkout-btn a {
+    text-decoration: none;
+    color: white; 
+}
+
 .checkout-btn:hover {
     background-color: #368b8b;
 }
+
+        /* Modal Styles */
+        .modal {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 5px;
+            padding-bottom: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #666;
+        }
+
+        .modal-header {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header h2 {
+            font-size: 20px;
+            color: #4D879C;
+        }
+
+        .edit-btn {
+            background-color: #4D879C;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .edit-btn:hover {
+            background-color: #3a6a7d;
+        }
+
+        .order-details-section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #4D879C;
+            margin-bottom: 10px;
+        }
+
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .option-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            position: relative;
+        }
+
+        .option-card.selected {
+            border-color: #49a6a6;
+            background-color: #e6f3f1;
+        }
+
+        .option-card.selected::after {
+            content: "✓";
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            color: #49a6a6;
+            font-weight: bold;
+        }
+
+        .option-title {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .option-description {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .option-price {
+            font-size: 12px;
+            color: #888;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 8px 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 5px;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+        }
+
+        .radio-option input {
+            margin-right: 5px;
+        }
+
+        .date-time-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        textarea.form-control {
+            min-height: 80px;
+            resize: vertical;
+        }
+
+        .modal-footer {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-total {
+            font-size: 18px;
+            font-weight: bold;
+            color: #4D879C;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .options-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .date-time-group {
+                grid-template-columns: 1fr;
+            }
+        }

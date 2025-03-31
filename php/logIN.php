@@ -1,12 +1,12 @@
 <?php
-session_start();
-$db_host = "localhost";
-$db_user = "root";
-$db_pass = "";
-$db_name = "mooncakes_db";
+// Database configuration
+include 'database.php'; 
 
-$conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
+if (!isset($conn) || !$conn instanceof mysqli) {
+    die("Database connection is not properly initialized.");
+}
 
+// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['username'] = $user['username'];
 
             // Redirect to index.html
-            header("Location: ../html/index.html");
+            header("Location: test.php");
             exit();
         } else {
             echo "<script>alert('Invalid password.');</script>";

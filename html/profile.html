@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../css/profile.css">
     <link rel="stylesheet" href="../css/index.css">
 </head>
-
 <header>
     <div class="nav-container">
         <div class="top-nav">
@@ -24,12 +23,34 @@
             </div>
             
             <div class="icons-container">
-                <div class="icon-wrapper">
-                    <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
-                        <circle cx="12" cy="8" r="4"/>
-                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                    </svg>
-                </div>
+                <header class="profile">
+                    <div class="dropdown" id="profile-dropdown">
+                        <div class="icon-wrapper">
+                            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <circle cx="12" cy="8" r="4"/>
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                            </svg>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="../html/profile.html" class="dropdown-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="8" r="4"/>
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                </svg>
+                                My Profile
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="http://localhost:3000/php/logIN.php" class="dropdown-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                                    <polyline points="16 17 21 12 16 7"></polyline>
+                                    <line x1="21" y1="12" x2="9" y2="12"></line>
+                                </svg>
+                                Log Out
+                            </a>
+                        </div>
+                    </div>
+
                 <div class="icon-wrapper"><a href="../html/cart.html">
                     <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
                         <path d="M4 4h2l2 11h10l2-7H8"/>
@@ -46,34 +67,34 @@
                 <li><a href="#" class="menu-item">Home</a></li>
                 <ul class="navbar-menu">
                     <li class="dropdown">
-                        <a href="#" class="menu-item">Categories <i class="dropdown-arrow"></i></a>
+                        <a href="../html/products.html" class="menu-item">Categories <i class="dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="products.html#bday">Birthday Cakes</a></li>
                             <li><a href="products.html#wedding">Wedding Cakes</a></li>
-                            <li><a href="#">Graduation Cakes</a></li>
-                            <li><a href="#">Christening Cakes</a></li>
-                            <li><a href="#">Cupcakes and Minis</a></li>
-                            <li><a href="#">Cheesecakes</a></li>
-                            <li><a href="#">Ice Cream Cakes</a></li>
-                            <li><a href="#">Mousse Cakes</a></li>
+                            <li><a href="products.html#graduation">Graduation Cakes</a></li>
+                            <li><a href="products.html#christening">Christening Cakes</a></li>
+                            <li><a href="products.html#cupcakes">Cupcakes and Minis</a></li>
+                            <li><a href="products.html#cheesecakes">Cheesecakes</a></li>
+                            <li><a href="products.html#icecream">Ice Cream Cakes</a></li>
+                            <li><a href="products.html#mousse">Mousse Cakes</a></li>
                         </ul>
                     </li>
                 
                     <li class="dropdown">
-                        <a href="#" class="menu-item">Flavours <i class="dropdown-arrow"></i></a>
+                        <a href="../html/flavours.html" class="menu-item">Flavours <i class="dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Classic Chocolate</a></li>
-                            <li><a href="#">Classic Vanilla</a></li>
-                            <li><a href="#">Strawberry</a></li>
-                            <li><a href="#">Matcha</a></li>
-                            <li><a href="#">Mocha</a></li>
-                            <li><a href="#">Cookies and Cream</a></li>
-                            <li><a href="#">Salted Caramel</a></li>
-                            <li><a href="#">Pistachio</a></li>
-                            <li><a href="#">Hazlenut</a></li>
-                            <li><a href="#">Ube</a></li>
-                            <li><a href="#">Red Velvet</a></li>
-                            <li><a href="#">Blueberry</a></li>
+                            <li><a href="flavours.html#chocolate">Classic Chocolate</a></li>
+                            <li><a href="flavours.html#vannila">Classic Vanilla</a></li>
+                            <li><a href="flavours.html#strawberry">Strawberry</a></li>
+                            <li><a href="flavours.html#matcha">Matcha</a></li>
+                            <li><a href="flavours.html#mocha">Mocha</a></li>
+                            <li><a href="flavours.html#cookiescream">Cookies and Cream</a></li>
+                            <li><a href="flavours.html#caramel">Salted Caramel</a></li>
+                            <li><a href="flavours.html#pistachio">Pistachio</a></li>
+                            <li><a href="flavours.html#hazlenut">Hazlenut</a></li>
+                            <li><a href="flavours.html#ube">Ube</a></li>
+                            <li><a href="flavours.html#velvet">Red Velvet</a></li>
+                            <li><a href="flavours.html#blueberry">Blueberry</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -84,6 +105,7 @@
         </div>
     </div>
 </header>
+<script src="../js/icon.js"></script>
 
 <body>
     <header class="header">
@@ -101,9 +123,9 @@
                 <img src="../img/hg.jpg" alt="Profile Picture" id="profile-image">
             </div>
             <div class="profile-details">
-                <h2 id="profile-name">Hermione Granger</h2>
-                <p class="profile-info">Email: <span id="profile-email">sampleemail.gmail.com</span></p>
-                <p class="profile-info">Contact: <span id="profile-contact"></span>09123456789</p>
+                <h2 id="profile-name">Username</h2>
+                <p class="profile-info">Email: <span id="profile-email"></span></p>
+                <p class="profile-info">Contact: <span id="profile-contact"></span></p>
             </div>
             <button class="edit-profile-btn" id="edit-profile-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

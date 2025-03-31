@@ -41,7 +41,7 @@
                                     My Profile
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a href="../php/logIN.php" class="dropdown-item">
+                                <a href="http://localhost:3000/php/logIN.php" class="dropdown-item">
                                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
                                         <polyline points="16 17 21 12 16 7"></polyline>
@@ -68,34 +68,34 @@
                     <li><a href="#" class="menu-item">Home</a></li>
                     <ul class="navbar-menu">
                         <li class="dropdown">
-                            <a href="#" class="menu-item">Categories <i class="dropdown-arrow"></i></a>
+                            <a href="../html/products.html" class="menu-item">Categories <i class="dropdown-arrow"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="products.html#bday">Birthday Cakes</a></li>
                                 <li><a href="products.html#wedding">Wedding Cakes</a></li>
-                                <li><a href="#">Graduation Cakes</a></li>
-                                <li><a href="#">Christening Cakes</a></li>
-                                <li><a href="#">Cupcakes and Minis</a></li>
-                                <li><a href="#">Cheesecakes</a></li>
-                                <li><a href="#">Ice Cream Cakes</a></li>
-                                <li><a href="#">Mousse Cakes</a></li>
+                                <li><a href="products.html#graduation">Graduation Cakes</a></li>
+                                <li><a href="products.html#christening">Christening Cakes</a></li>
+                                <li><a href="products.html#cupcakes">Cupcakes and Minis</a></li>
+                                <li><a href="products.html#cheesecakes">Cheesecakes</a></li>
+                                <li><a href="products.html#icecream">Ice Cream Cakes</a></li>
+                                <li><a href="products.html#mousse">Mousse Cakes</a></li>
                             </ul>
                         </li>
                     
                         <li class="dropdown">
-                            <a href="#" class="menu-item">Flavours <i class="dropdown-arrow"></i></a>
+                            <a href="../html/flavours.html" class="menu-item">Flavours <i class="dropdown-arrow"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Classic Chocolate</a></li>
-                                <li><a href="#">Classic Vanilla</a></li>
-                                <li><a href="#">Strawberry</a></li>
-                                <li><a href="#">Matcha</a></li>
-                                <li><a href="#">Mocha</a></li>
-                                <li><a href="#">Cookies and Cream</a></li>
-                                <li><a href="#">Salted Caramel</a></li>
-                                <li><a href="#">Pistachio</a></li>
-                                <li><a href="#">Hazlenut</a></li>
-                                <li><a href="#">Ube</a></li>
-                                <li><a href="#">Red Velvet</a></li>
-                                <li><a href="#">Blueberry</a></li>
+                                <li><a href="flavours.html#chocolate">Classic Chocolate</a></li>
+                                <li><a href="flavours.html#vannila">Classic Vanilla</a></li>
+                                <li><a href="flavours.html#strawberry">Strawberry</a></li>
+                                <li><a href="flavours.html#matcha">Matcha</a></li>
+                                <li><a href="flavours.html#mocha">Mocha</a></li>
+                                <li><a href="flavours.html#cookiescream">Cookies and Cream</a></li>
+                                <li><a href="flavours.html#caramel">Salted Caramel</a></li>
+                                <li><a href="flavours.html#pistachio">Pistachio</a></li>
+                                <li><a href="flavours.html#hazlenut">Hazlenut</a></li>
+                                <li><a href="flavours.html#ube">Ube</a></li>
+                                <li><a href="flavours.html#velvet">Red Velvet</a></li>
+                                <li><a href="flavours.html#blueberry">Blueberry</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -106,7 +106,7 @@
             </div>
         </div>
     </header>
-
+    <script src="../js/icon.js"></script>
 <body>
 <script src="../js/script.js" defer></script>
 
@@ -271,25 +271,5 @@
 
 <div id="productModal"></div>
 <script src="../js/modal.js" defer></script>
-//ICON js
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const dropdown = document.getElementById('profile-dropdown');
-        const iconWrapper = dropdown.querySelector('.icon-wrapper');
-        
-        // Toggle dropdown when clicking on the icon
-        iconWrapper.addEventListener('click', function(e) {
-            e.preventDefault();
-            dropdown.classList.toggle('active');
-        });
-        
-        // Close dropdown when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!dropdown.contains(e.target)) {
-                dropdown.classList.remove('active');
-            }
-        });
-    });
-</script>
 </body>
 </html>
